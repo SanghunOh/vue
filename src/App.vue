@@ -1,14 +1,15 @@
 <script>
-import TextBind from './components/TextBind.vue';
 export default {
-  components : {
-    TextBind,
-  }
+  methods : {
+    sayHello(){
+      return "Hello World";
+    }
+  },
 }
 </script>
 
 <template>
-  <TextBind />
+  <h2>{{sayHello()}}</h2>
 </template>
 
 <style>
